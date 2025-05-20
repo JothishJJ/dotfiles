@@ -42,9 +42,8 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
+confirm-close-surface = false
+
 # ~/.config/ghostty/config
-
-confirm-on-exit = false
-
 background-opacity = 0.7
 theme = nord-wave
