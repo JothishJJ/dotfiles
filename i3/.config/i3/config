@@ -14,7 +14,7 @@ for_window [class="^.*"] border pixel 1
 set $mod Mod4
 # set $mod Mod1
 
-exec --no-startup-id picom
+exec_always --no-startup-id picom
 exec --no-startup-id feh --bg-scale ~/.config/backgrounds/lofiwallpaper.png
 exec --no-startup-id xrdb -merge ~/.Xresources
 exec_always --no-startup-id setxkbmap -option ctrl:nocaps
@@ -23,7 +23,7 @@ exec_always --no-startup-id setxkbmap -option ctrl:nocaps
 exec_always killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
-exec_always --no-startup-id xrandr --output eDP-1 --scale 0.9x0.9
+exec_always --no-startup-id xrandr --output eDP-1 --scale 0.85x0.85
 
 bindsym Print exec maim "/home/$USER/Pictures/$(date).jpg"
 bindsym $mod+Print exec maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date).jpg"
