@@ -11,3 +11,7 @@ size = 11.0
 [font.normal]
 family = "MesloLGS Nerd Font Mono"
 style = "Regular"
+
+[window]
+opacity = 0.6
+
